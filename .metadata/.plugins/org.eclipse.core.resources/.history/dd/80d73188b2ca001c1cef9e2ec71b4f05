@@ -1,0 +1,21 @@
+package Immutable;
+
+public class StringPool {
+	static String s1 = "ggg";
+	static String s2 = "kkk";
+	public static void main(String[] args) {
+
+		//System.out.println(s1.hashCode());
+		//System.out.println(s2.hashCode());
+		for (int i = 0; i < 100; i++) {
+			System.gc();
+		}
+
+	}
+
+	@Override // GC doesn't get called all the time//
+	protected void finalize() {
+		System.out.println( s1.hashCode()+ " Destroyed");
+	}
+
+}

@@ -1,0 +1,8 @@
+package com.hibernate.jpahibernate;
+
+public class Book {
+	private Integer bookid;
+	private String title;
+	private String author;
+	private float price;
+}

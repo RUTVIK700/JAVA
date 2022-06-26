@@ -1,0 +1,15 @@
+package com.spring.rest.springrest.service;
+
+import java.util.List;
+
+import com.spring.rest.springrest.entities.Course;
+
+public class CourseServiceImpl implements CourseService {
+
+	@Override
+	public List<Course> getCourses() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

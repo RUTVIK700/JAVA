@@ -1,0 +1,33 @@
+.bgimage{
+  background-image:url("0.jpg");
+  background-size: 550px;
+  height: 800px;
+  width: 100%;
+  margin: 0;
+  display: inline-block;
+}
+
+.body{
+  margin: 0
+}
+
+.first-div{
+  text-align: center;
+  margin-top: 150px;
+  color: white;
+  background-color:#0F2C67;
+  display:inline-block;
+  margin-left: 500px;
+  width: 500px;
+  font-family: 'Bakbak One', cursive;
+}
+
+@media (max-width:768px) {
+	.first-div{text-align:center;
+    margin:auto;}
+
+ }
+
+ a{
+   color: white;
+ }

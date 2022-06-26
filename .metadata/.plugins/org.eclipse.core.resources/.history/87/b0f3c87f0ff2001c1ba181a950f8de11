@@ -1,0 +1,5 @@
+package com.hibernate.jpahibernate;
+
+public class Book {
+
+}

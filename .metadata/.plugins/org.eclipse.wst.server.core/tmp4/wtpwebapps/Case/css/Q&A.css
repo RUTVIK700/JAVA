@@ -1,0 +1,72 @@
+.body{
+  margin: 40px;
+  font-family: 'Bakbak One', cursive;
+  color: white;
+}
+
+body{
+  background-color: #0F2C67
+}
+
+
+.h1{
+  margin-left:20px;
+  text-align: left;
+  font-weight:bold;
+
+}
+
+.img1{
+  width: 100px;
+  height: 90px;
+  float: left;
+  margin-right: 20px
+}
+
+.t1{
+  margin: 20px 0;
+  font-weight: bold;
+}
+
+.area{
+  resize: none;
+}
+
+.bt1{
+  margin-left: 635px;
+  margin-top: 10px;
+  width: 120px;
+  height: 30px;
+  font-family: 'Bakbak One', cursive;
+  font-size: 15px;
+}
+
+.a{
+  width: 5%
+}
+
+.time{
+  text-align: right;
+  width: 8%
+}
+
+.text{
+  width: 50%
+}
+.i{
+  width: 1%
+}
+
+p{
+  margin-bottom:0
+}
+
+.table{
+  border-style: solid;
+  border: 2
+}
+
+.td2{
+  border-top:solid;
+  border-bottom:solid;
+}

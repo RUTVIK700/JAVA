@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/success.css">
+    <title></title>
+  </head>
+  <body class="body bgimage">
+    <div class="first-div">
+    <h1><strong>SUCCESS</strong></h1>
+    </div>
+  </body>
+</html>

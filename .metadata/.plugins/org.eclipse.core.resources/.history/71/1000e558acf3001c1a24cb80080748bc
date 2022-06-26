@@ -1,0 +1,5 @@
+package com.spring.rest.springrest.dao;
+
+public class CourseDao {
+
+}

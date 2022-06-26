@@ -1,0 +1,17 @@
+package deadlock;
+
+public class DeadlockDemo implements Runnable {
+	
+	
+	public DeadlockDemo(){
+		
+	}
+	public static void main(String[] args) {
+
+	}
+
+	@Override
+	public void run() {
+		
+	}
+}

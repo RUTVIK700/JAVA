@@ -1,0 +1,24 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <!DOCTYPE html>
+    <html lang="en" dir="ltr">
+      <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/l.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+        <title></title>
+      </head>
+      <body class="body">
+        <div class="bgimage">
+          <div class="head">
+            <h1 class="h1"><strong>WELCOME ALL😃</strong></h1>
+          </div>
+          <div class="but">
+            <a href="login.jsp"><button class="b1" type="button" name="login">LOGIN</button></a>
+            <a href="register.jsp"><button class="b2" type="button" name="register">REGISTER</button></a>
+          </div>
+        </div>
+      </body>
+    </html>

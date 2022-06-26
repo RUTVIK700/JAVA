@@ -1,0 +1,20 @@
+package nonstaticinner;
+
+public class NonstaticInner {
+	void f1() {
+		System.out.println("Inside Outer Nonstatic method");
+	}
+	
+	class Inner {
+		void f1() {
+			System.out.println("Inside Inner Nonstatic method");
+		}
+		
+	}
+	
+	public static void main(String[] args) {
+		Outer out=new out();
+		
+	}
+
+}

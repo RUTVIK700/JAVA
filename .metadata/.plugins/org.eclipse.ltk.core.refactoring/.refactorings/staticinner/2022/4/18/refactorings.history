@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;nonstaticinner.NonstaticInner&apos; to &apos;Outer&apos;&#x0D;&#x0A;- Original project: &apos;staticinner&apos;&#x0D;&#x0A;- Original element: &apos;nonstaticinner.NonstaticInner&apos;&#x0D;&#x0A;- Renamed element: &apos;nonstaticinner.Outer&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;NonstaticInner&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;nonstaticinner{NonstaticInner.java[NonstaticInner" matchStrategy="1" name="Outer" qualified="false" references="true" similarDeclarations="false" stamp="1651127606996" textual="false" version="1.0"/>
+</session>

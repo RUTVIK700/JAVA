@@ -1,0 +1,52 @@
+package com.ww.user;
+import java.sql.*;
+
+import java.util.*;
+
+import java.lang.*;
+
+// Example 1: SQL SELECT
+
+class connect
+
+{
+
+	//classpath jar file set up
+
+	public static void main(String[] args)throws Exception{
+
+		//load the JDBC Driver
+
+		//11 
+
+		//Connection Obj
+
+		Connection con = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","NEW_Qwebsite","website");
+
+		//JDBC Obj fro Statement
+
+		Statement st = con.createStatement();
+
+		//write the query
+
+		String query = "SELECT * FROM userdata";
+
+		//create JDBC ResultSet obj
+
+		ResultSet rs = st.executeQuery(query);
+
+		while(rs.next()){
+
+			System.out.println(rs.getInt(1)+" "+rs.getString(2));
+
+		}
+
+		rs.close();
+
+		st.close();
+
+		con.close();
+
+	}
+
+}

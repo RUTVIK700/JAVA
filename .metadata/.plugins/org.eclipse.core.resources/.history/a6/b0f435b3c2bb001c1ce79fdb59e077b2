@@ -1,0 +1,18 @@
+package deadlock;
+
+public class DeadlockDemo implements Runnable {
+	FirstResource fr=new FirstResource();
+	SecondResoure sr=new SecondResoure();
+	
+	public DeadlockDemo(){
+		
+	}
+	public static void main(String[] args) {
+
+	}
+
+	@Override
+	public void run() {
+		
+	}
+}

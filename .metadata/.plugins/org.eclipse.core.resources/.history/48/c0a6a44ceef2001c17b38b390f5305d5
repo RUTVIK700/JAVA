@@ -1,0 +1,57 @@
+package com.spring.rest.springrest.service;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import com.spring.rest.springrest.entities.Course;
+@Service
+public class CourseServiceImpl implements CourseService {
+
+	List<Course> list;
+	public CourseServiceImpl() {
+		list=new ArrayList<>();
+		list.add(new Course(145,"Java Book","Good Book for java"));
+		list.add(new Course(45,"python Book","Good Book for python"));
+	}
+
+	@Override
+	public List<Course> getCourses() {
+		
+		return list;
+	}
+
+
+	@Override
+	public Course getCourse(long courseid) {
+		Course c=null;
+		for(Course i:list) {
+			if(i.getId()==courseid) {
+				c=i;
+				break;
+			}
+		}
+		return c;
+	}
+
+	@Override
+	public Course addCourse(Course course) {
+		list.add(course);
+		return course;
+	}
+
+	@Override
+	public Course UpdateCourse(Course course) {
+		for(Course l:list) {
+			if(course.getId()==l.getId()) {
+				l.setTitle(course.getTitle());
+				l.setDescription(course.getDescription());
+				break;
+				
+			}
+		}
+		return course;
+	}
+
+}

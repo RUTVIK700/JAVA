@@ -1,0 +1,44 @@
+package com.rutvik.QandA.controller;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.rutvik.QandA.dao.UserDAO;
+import com.rutvik.QandA.model.user;
+
+/**
+ * Servlet implementation class UserController
+ */
+@WebServlet("/User")
+public class UserController extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	private UserDAO dao = new UserDAO();
+	public UserController() {
+		super();
+
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		String username = request.getParameter("username");
+		String email = request.getParameter("email");
+		String password = request.getParameter("password");
+		
+		user u = new user();
+		u.setUsername(username);
+		u.setEmail(email);
+		u.setPassword(password);
+		
+		dao.save(u);
+		response.setContentType("text/html");
+		PrintWriter out = response.getWriter();
+		out.print("<b>User Created!!</b>");
+	}
+
+}
